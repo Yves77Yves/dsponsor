@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.9;
 
-import "@openzeppelin/contracts/finance/PaymentSplitter.sol";
+import "../node_modules/@openzeppelin/contracts/finance/PaymentSplitter.sol";
 
 /**
  * @title DSponsorTreasury factory

@@ -5,13 +5,13 @@ import {IDSponsorNFTBase} from "./interfaces/IDSponsorNFT.sol";
 
 import "./lib/ContextMixin.sol";
 
-import "@openzeppelin/contracts/utils/Counters.sol";
-import "@openzeppelin/contracts/utils/Strings.sol";
+import "../node_modules/@openzeppelin/contracts/utils/Counters.sol";
+import "../node_modules/@openzeppelin/contracts/utils/Strings.sol";
 
-import "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol";
-import "@openzeppelin/contracts/token/ERC721/extensions/ERC721Royalty.sol";
+import "../node_modules/@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol";
+import "../node_modules/@openzeppelin/contracts/token/ERC721/extensions/ERC721Royalty.sol";
 
-import "@openzeppelin/contracts/security/ReentrancyGuard.sol";
+import "../node_modules/@openzeppelin/contracts/security/ReentrancyGuard.sol";
 
 /**
  * @title DSponsorNFT
