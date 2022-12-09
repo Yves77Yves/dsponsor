@@ -1,0 +1,7 @@
+module.exports = [
+  [
+    '0xB85F0DBb5A908736213335235D78edC9E888b44B',
+    '0x64E8f7C2B4fd33f5E8470F3C6Df04974F90fc2cA'
+  ],
+  [98, 2]
+]
