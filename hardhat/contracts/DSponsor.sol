@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.9;
 
-import "@openzeppelin/contracts/access/AccessControl.sol";
+import "../node_modules/@openzeppelin/contracts/access/AccessControl.sol";
 
-import "@openzeppelin/contracts/interfaces/IERC721.sol";
+import "../node_modules/@openzeppelin/contracts/interfaces/IERC721.sol";
 
 import "./lib/ContextMixin.sol";
 
