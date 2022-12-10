@@ -11,7 +11,6 @@ export default function MainSection({ className }) {
     state: { contract, web3, accounts, dSponsorNFTContract },
   } = useEth();
 
-
   const [marketProducts, setMarketProducts] = useState([]);
 
   let isFinished = false;
@@ -62,45 +61,46 @@ export default function MainSection({ className }) {
 
             const name = await contractNft.methods.name().call();
 
+            console.log("account[0]");
             console.log(accounts[0]);
+            console.log("controller");
             console.log(controller);
 
-            if (accounts[0] === controller) {
-              products.data.push({
-                id: index,
-                owner: "long",
-                owner_img: "owner.png",
-                creator_img: "creator.png",
-                eth_price: parseInt(price.amount, 10),
-                usd_price: availableSupply,
-                creator: controller
-                  .substring(0, 5)
-                  .concat("....")
-                  .concat(controller.substring(38, 43)),
-                whishlisted: true,
-                thumbnil: "marketplace-product-1.jpg",
-                title: name,
-                isActive: true,
-                contractOwner: address,
-              });
+            console.log("push data");
 
-            }
+            if (isFinished === false){
+            products.data.push({
+              id: index,
+              owner: "long",
+              owner_img: "owner.png",
+              creator_img: "creator.png",
+              eth_price: parseInt(price.amount, 10),
+              usd_price: availableSupply,
+              creator: controller
+                .substring(0, 5)
+                .concat("...")
+                .concat(controller.substring(38, 43)),
+              whishlisted: true,
+              thumbnil: "marketplace-product-1.jpg",
+              title: name,
+              isActive: true,
+              contractOwner: address,
+            });
+          }
+
           })
         );
 
         setMarketProducts(products.data);
       };
 
-
-
       fetchData();
     }
 
-    console.log("end if");
+    console.log("end if espace");
   });
 
-  isFinished = true;
-
+  isFinished = false;
 
   return (
     <div className={`market-place-section w-full ${className || ""}`}>

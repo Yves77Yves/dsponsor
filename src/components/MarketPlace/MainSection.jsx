@@ -66,7 +66,7 @@ export default function MainSection({ className }) {
             creator_img: "creator.png",
             eth_price: parseInt(price.amount, 10),
             usd_price: availableSupply,
-            creator: controller.substring(0, 5).concat("....").concat(controller.substring(38,43)),
+            creator: controller.substring(0, 5).concat("...").concat(controller.substring(38,43)),
             whishlisted: true,
             thumbnil: "marketplace-product-1.jpg",
             title: name,

@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-pragma solidity ^0.8.9;
+pragma solidity 0.8.13;
 
 interface IDSponsor {
     event NewSponsoData(
@@ -15,9 +15,8 @@ interface IDSponsor {
         string reason
     );
     event PropertyUpdate(string indexed property, bool indexed allowed);
-    
-    event ValidityPeriodUpdate(uint256 start, uint256 end); 
-     
+
+    event ValidityPeriodUpdate(uint256 start, uint256 end);
 
     error NoDataSubmitted();
     error SponseeCannotBeZeroAddress();
@@ -28,7 +27,6 @@ interface IDSponsor {
     function setProperty(string memory propertyString, bool allowed) external;
 
     function setValidityPeriod(uint256 start, uint256 end) external;
-
 
     function setSponsoData(
         uint256 tokenId,
@@ -54,10 +52,9 @@ interface IDSponsor {
             string memory lastRejectionReason
         );
 
-        
-    function getStartPeriod() external returns (uint);
-    
-    function getEndPeriod() external returns (uint);
+    function getStartPeriod() external returns (uint256);
+
+    function getEndPeriod() external returns (uint256);
 
     function isAllowedProperty(string memory propertyString)
         external
