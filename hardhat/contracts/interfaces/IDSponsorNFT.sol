@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: MIT
-pragma solidity ^0.8.9;
+pragma solidity 0.8.13;
 
-import "@openzeppelin/contracts/interfaces/IERC721.sol";
-import "@openzeppelin/contracts/interfaces/IERC2981.sol";
+import "../../node_modules/@openzeppelin/contracts/interfaces/IERC721.sol";
+import "../../node_modules/@openzeppelin/contracts/interfaces/IERC2981.sol";
 
 interface IDSponsorNFTBase {
     error AmountValueTooLow(uint256 value);
