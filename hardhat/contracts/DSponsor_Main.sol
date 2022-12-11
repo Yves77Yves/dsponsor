@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-pragma solidity 0.8.13;
+pragma solidity ^0.8.9;
 
 import "./DSponsor.sol";
 import "./DSponsorNFTFactory.sol";
@@ -7,7 +7,8 @@ import "./DSponsorTreasuryFactory.sol";
 
 /**
  * @title DSponsor main contract
- * @author Anthony Gourraud & Yves Spielmann
+ * @author Anthony Gourraud
+ * @author Yves Spielmann
  * @notice Use this contract to create {DSponsor} and {DSponsorNFT} instances,
  * events record guarantees a follow up on activities with the prototcol
  */

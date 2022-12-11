@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-pragma solidity 0.8.13;
+pragma solidity ^0.8.9;
 
 import "../node_modules/@openzeppelin/contracts/access/AccessControl.sol";
 
@@ -11,7 +11,7 @@ import "./interfaces/IDSponsor.sol";
 
 /**
  * @title A sponsoring contract
- * @author Anthony Gourraud & Yves Spielmann
+ * @author Anthony Gourraud
  * @author Yves Spielmann
  * @notice Give for each token of an ERC721 contract a right to advertise.
  *  Token owners are considered as "sponsors" and can provide sponsoring information

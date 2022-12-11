@@ -1,12 +1,11 @@
 // SPDX-License-Identifier: MIT
-pragma solidity 0.8.13;
+pragma solidity ^0.8.9;
 
 import "../node_modules/@openzeppelin/contracts/finance/PaymentSplitter.sol";
 
 /**
  * @title DSponsorTreasury factory
  * @author Anthony Gourraud
- * @author Yves Spielmann
  * @notice Create {PaymentSplitter} contract with shares for DSponsor protocol
  */
 contract DSponsorTreasuryFactory {
