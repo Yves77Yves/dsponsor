@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-pragma solidity 0.8.13;
+pragma solidity ^0.8.9;
 
 import {IDSponsorNFTBase} from "./interfaces/IDSponsorNFT.sol";
 
@@ -15,7 +15,8 @@ import "../node_modules/@openzeppelin/contracts/security/ReentrancyGuard.sol";
 
 /**
  * @title DSponsorNFT
- * @author Anthony Gourraud & Yves Spielmann
+ * @author Anthony Gourraud
+ * @author Yves Spielmann
  * @notice This is an NFT (ERC721) contract
  * with ERC20 pricing and ERC2981 royalties implementations.
  *
