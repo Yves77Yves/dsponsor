@@ -4,7 +4,6 @@ import ProductCardStyleTwo from "../Cards/ProductCardStyleTwo";
 import DataIteration from "../Helpers/DataIteration";
 
 import useEth from "../../contexts/EthContext/useEth";
-import TrendingSection from "../Home/TrendingSection";
 
 export default function MainSection({ className }) {
   const {
@@ -100,7 +99,7 @@ export default function MainSection({ className }) {
 
   return (
     <div className={`market-place-section w-full ${className || ""}`}>
-      <TrendingSection></TrendingSection>
+
       <div className="market-place-wrapper w-full">
         <div className="filter-navigate-area lg:flex justify-between mb-8 items-center">
           <div className="tab-item lg:mb-0 mb-5">

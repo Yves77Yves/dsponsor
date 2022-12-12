@@ -1,5 +1,9 @@
 # dsponsor
 
+d>sponsor git contains both contracts and Dapp.
+We first install, deploy and test smart contracts. (cf # d>sponsor contracts ).
+We then deploy dapp. (cf # d>sponsor Dapp MVP )
+
 # d>sponsor contracts
 
 Build a community-owned ad inventory with d>sponsor.
@@ -137,16 +141,16 @@ npx hardhat verify --constructor-args verif-args-examples/DSponsorPolygonNFT.js 
 npx hardhat verify --contract @openzeppelin/contracts/finance/PaymentSplitter.sol:PaymentSplitter --constructor-args verif-args-examples/Treasury.js TREASURY_CONTRACT_ADDR --network mumbai
 ```
 
-# dapp
+# d>sponsor Dapp MVP
 
-la Dapp est inspirée d'une marketplace importée qui a été aménagée pour les besoins de la demo.
+The Dapp is based on marketplace imported and customized from MVP.
 
-## lancement de l'application
+## Dapp start
 
-- prerequisite : smartcontracts installés et déployés
+- prerequisite : smartcontracts installed and deployer
 - npm start
-- connecter sa wallet au réseau Mumbai
+- connect your wallet
 
 ## site
 
-- un site de test est visible à cette adresse
+- a site is visible on vercel at https://nftmax-yves77yves.vercel.app/
