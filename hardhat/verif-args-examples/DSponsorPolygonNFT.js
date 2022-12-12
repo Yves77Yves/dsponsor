@@ -1,7 +1,7 @@
 module.exports = [
-  'DSponsorNFT2',
-  'DSponsorNFT2',
-  100,
-  '0xB85F0DBb5A908736213335235D78edC9E888b44B',
-  '0xcba8b702fd55a08e9c6203394e7066443e6e0dd4'
+  'Yed Collection',
+  'YED',
+  10,
+  '0x2132976b2ba01016293d8a7dc5c2cc7f633b1600',
+  '0x436525229e928c4ed489ae0082f63df132ed0d8a'
 ]

@@ -1,5 +1,5 @@
 module.exports = [
-  '0xe29f4c3b2d321539ab4955cd88a34ce3a52c49b6',
-  'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
-  '0xB85F0DBb5A908736213335235D78edC9E888b44B'
+  '0xadc9b7a20cb0bbe8c1ff3d6221523f8ba9d92a39',
+  'contract',
+  '0x2132976b2ba01016293d8a7dc5c2cc7f633b1600'
 ]

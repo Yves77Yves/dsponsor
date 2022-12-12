@@ -261,7 +261,7 @@ export default function ProductCardStyleTwo({
                 type="button"
                 className="px-4 py-2.5 text-white text-sm bg-pink rounded-full tracking-wide"
               >
-                On Sale
+                Buy
               </button>
             </div>
           </div>
