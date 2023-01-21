@@ -1,9 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { toast } from "react-toastify";
 import useEth from "../../contexts/EthContext/useEth";
 import localImgLoad from "../../lib/localImgLoad";
-import Icons from "../Helpers/Icons";
 
 export default function ProductCardStyleTwo({
   className,
@@ -13,18 +11,10 @@ export default function ProductCardStyleTwo({
   const {
     state: { web3, dSponsorNFTContract, accounts},
   } = useEth();
-  const [addFavorite, setValue] = useState(datas.whishlisted);
+
   const [options, setOption] = useState(false);
   const currency = "0xfe4F5145f6e09952a5ba9e956ED0C25e3Fa4c7F1";
-  const favoriteHandler = () => {
-    if (!addFavorite) {
-      setValue(true);
-      toast.success("Added to Favorite List");
-    } else {
-      setValue(false);
-      toast.warn("Remove to Favorite List");
-    }
-  };
+
   const purchase = async (event) => {
     const contractNft = new web3.eth.Contract(
         dSponsorNFTContract.abi,
@@ -65,34 +55,14 @@ export default function ProductCardStyleTwo({
             style={{
               background: `url(${localImgLoad(
                 `images/${datas.thumbnil}`
-              )}) 0% 0% / cover no-repeat`,
+              )}) 50% 50% / cover no-repeat`,
             }}
           >
             <div className="product-two-options flex justify-between mb-5 relative">
-              <div className="status">
-                {datas.isActive && (
-                  <span className="text-xs px-3 py-1.5 tracking-wide rounded-full bg-gold text-white">
-                    Active
-                  </span>
-                )}
-              </div>
+              
               <div className=" review flex space-x-2">
-                <button
-                  onClick={favoriteHandler}
-                  type="button"
-                  className={`w-7 h-7 bg-white rounded-full flex justify-center items-center  ${
-                    addFavorite ? "text-red-500" : "text-thin-light-gray"
-                  }`}
-                >
-                  <Icons name="love" />
-                </button>
-                <button
-                  onClick={() => setOption(!options)}
-                  type="button"
-                  className="w-7 h-7 bg-white rounded-full flex justify-center items-center text-thin-light-gray"
-                >
-                  <Icons name="dots" />
-                </button>
+                
+                
                 {options && (
                   <div
                     onClick={() => setOption(!options)}

@@ -22,7 +22,7 @@ export default function MainSection({ className }) {
         console.log(" before eventNewDSponsor");
         const eventNewDSponsor = await contract.getPastEvents("NewDSponsor", {
           fromBlock: 29573830, // 29310000,
-          toBlock: "latest",
+          toBlock:  29590100, // "latest", 29590072, 
         });
         console.log(" after eventNewDSponsor");
         console.log(eventNewDSponsor);
@@ -62,12 +62,12 @@ export default function MainSection({ className }) {
             id: index,
             owner: "long",
             owner_img: "owner.png",
-            creator_img: "creator.png",
+            creator_img: `creator-${index + 1}.png`,
             eth_price: parseInt(price.amount, 10),
             usd_price: availableSupply,
             creator: controller.substring(0, 5).concat("...").concat(controller.substring(38,43)),
             whishlisted: true,
-            thumbnil: "marketplace-product-1.jpg",
+            thumbnil: `marketplace-product-${index + 1}.jpg`,
             title: name,
             isActive: true,
             contractOwner: address

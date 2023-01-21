@@ -32,12 +32,12 @@ export default function ShopProductWidget({ className }) {
             </div>
             <div className="mb-4">
               <p className="text-xl text-purple font-bold opacity-[0.7] tracking-wider">
-                ID : 2320382
+                ID : 4
               </p>
             </div>
             <div className="details">
               <h1 className="text-dark-gray text-26 font-bold tracking-wider mb-4">
-                Logo sur site web
+                Logo Collection
               </h1>
               <p className="text-base text-thin-light-gray tracking-wide mb-7">
               Bénéficier d’un espace de visibilité sur docteurcrypto.com pour l’année 2023 afin d’afficher votre logo cliquable. Le site a reçu 525 visiteurs en moyenne par jour en 2022.
@@ -46,7 +46,7 @@ export default function ShopProductWidget({ className }) {
                 Publish Date
               </p>
               <p className="text-xl font-bold text-dark-gray mb-7">
-                12 March 2021, 11:32 PM
+                15 Decembre 2022
               </p>
               <div className="w-full h-[1px] bg-black opacity-[0.1]"></div>
             </div>
@@ -97,18 +97,13 @@ export default function ShopProductWidget({ className }) {
               </div>
               <div>
                 <p className="font-bold text-xl tracking-wide line-clamp-1 text-dark-gray">
-                  75,320 ETH
+                  0.002
                 </p>
-                <p className="text-base text-lighter-gray">(773.69 USD)</p>
+                <p className="text-base text-lighter-gray">.</p>
               </div>
             </div>
             <div>
-              <button
-                type="button"
-                className="btn-shine  px-4 py-3 text-white text-base bg-pink rounded-full tracking-wide"
-              >
-                Buy
-              </button>
+
             </div>
           </div>
         </div>
